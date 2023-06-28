@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 10rem 1rem 10rem;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1.5rem;
+}
+
+.buscar {
+    border-radius: 1rem 1rem 1rem 1rem;
+    border: none;
+    background-color: rgb(235, 232, 232);
+    width: 30rem;
+    height: 2rem;
+}
+
+.input__container {
+    position: relative;
+    margin-right: 15rem;
+}
+
+.lupa {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 15%;
+    transform: translate(-140%);
+}
+
+.login {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: black;
+    color: white;
+}
