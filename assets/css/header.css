@@ -1,14 +1,15 @@
 .header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 1rem 10rem 1rem 10rem;
+    margin: 0.25rem 0.25rem 0.25rem;
 }
 
 .logo {
     width: 5rem;
     height: 5rem;
-    margin-right: 1.5rem;
+    margin: 1.5rem 1.5rem 1.5rem 5rem;
 }
 
 .buscar {
@@ -20,22 +21,48 @@
 }
 
 .input__container {
-    position: relative;
-    margin-right: 15rem;
+    display: flex;
+    margin-right: 10rem;
 }
 
 .lupa {
+    margin-top: 0.25rem;
     width: 1.5rem;
     height: 1.5rem;
-    position: absolute;
-    top: 15%;
-    transform: translate(-140%);
+    transform: translate(-150%);
 }
 
-.login {
+.button {
     width: 15rem;
     height: 3rem;
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: black;
     color: white;
+}
+
+@media screen and (max-width: 420px) {
+    .header {
+        margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .logo {
+        margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+    }
+    .input__container {
+        width: 13rem;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .logo {
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .buscar {
+        width: 20rem;
+    }
+    .input__container {
+        margin-right: 1rem;
+    }
 }

@@ -1,10 +1,69 @@
 .banner {
-    margin: 2rem 0 1rem 0;
-    background-image: href;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .banner__image {
-    background: url('../img/banner.png') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    background: url('../img/banner.png') no-repeat center/cover ;
     width: 100%;
     height: 20rem;
+}
+
+.banner__content h1, h3{
+    color: black;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0 0 3rem;
+}
+
+.banner__image h5 {
+    margin: 2.75rem 0 0 58rem;
+    color: rgb(8, 8, 8);
+}
+
+.banner__button {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 0px) {
+    .banner__content {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 0 1.5rem;
+    }
+    .banner__image h5 {
+        margin: 1rem 0 0 0rem;
+        font-size: 1rem;
+    }
+    .banner__image {
+        height: 16rem;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .logo {
+        margin: 1rem rem 1rem 1rem;
+    }
+    .buscar {
+        width: 20rem;
+    }
+    .banner__content {
+        margin-top: 2.5rem;
+    }
+    .banner__image h5 {
+        margin: 1.5rem 0 0 32rem;
+        font-size: 1rem;
+    }
 }
