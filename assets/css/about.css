@@ -1,0 +1,80 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: rgb(219, 218, 218);
+    align-items: center;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: row;
+}
+.aboutus ul{
+    list-style: none;
+    margin-left: 5rem;
+}
+
+.aboutus img{
+    margin-left: 10rem;
+}
+
+.aboutus ul li{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    width: 30rem;
+    margin-left: 5rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h3 {
+    font-size: medium;
+    font-weight: lighter;
+}
+
+.form input {
+    margin: 1rem 1rem 1rem 0rem;
+    height: 2.5rem;
+}
+
+.contact form textarea {
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.contact button {
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+
+@media screen and (max-width: 420px) {
+
+    .contact {
+        width: 10rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .aboutus {
+        flex-direction: column;
+    }
+    .aboutus ul{
+        margin-left: 1rem;
+    }
+    .aboutus img{
+        margin-left: 1rem;
+    }
+    .contact {
+        width: 25rem;
+        margin-left: 3rem;
+    }
+}
