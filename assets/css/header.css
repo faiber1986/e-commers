@@ -38,6 +38,10 @@
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: black;
     color: white;
+    text-align: center;
+    line-height: 3rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 420px) {

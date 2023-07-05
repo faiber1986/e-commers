@@ -43,11 +43,11 @@
 
 .form input {
     margin: 1rem 1rem 1rem 0rem;
-    height: 2.5rem;
+    height: 3rem;
 }
 
 .contact form textarea {
-    margin: 1rem 1rem 1rem 0rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 .contact button {
