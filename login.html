@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/login.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/about.css">
+    <script type="module" src="./assets/js/login.js"></script>
 </head>
 
 <body>
@@ -29,11 +30,18 @@
     <section class="login">
         <div class="login__main">
             <h3>Iniciar sesión</h3>
-            <form action="#">
-                <input type="text" placeholder="Ingrese correo electrónico">
-                <input type="password" placeholder="Ingrese Contraseña">
+            <form id="loginForm" action="#">
+                <div>
+                    <input type="email" id="email" placeholder="Ingrese correo electrónico">
+                </div>
+                <div>
+                    <input type="password" id="password" placeholder="Ingrese Contraseña">
+                </div>
+                <div>
+                    <button type="submit" class="button-login" onclick="handleFormSubmit(event)">Entrar</button>
+                </div>
             </form>
-            <button type="submit" class="button-login">Entrar</button>
+            <p id="errorMessage">Usuario y/o contraseña invalidos, intente nuevamente</p>
         </div>
     </section>
 
